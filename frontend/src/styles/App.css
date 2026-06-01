@@ -1,0 +1,97 @@
+/* App Styles */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-12);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-12);
+  margin-left: 260px;
+}
+
+.navbar-custom {
+  background-color: var(--color-13) !important;
+  border-bottom: 1px solid var(--color-11);
+  padding: 1rem 1.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-title h4 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar-date {
+  color: var(--color-3);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .main-content {
+    margin-left: 260px;
+  }
+
+  .content-area {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .content-area {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .navbar-custom {
+    padding: 1rem !important;
+  }
+
+  .navbar-title h4 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-date {
+    display: none;
+  }
+
+  .content-area {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-area {
+    padding: 12px;
+  }
+
+  .navbar-title h4 {
+    font-size: 1rem;
+  }
+}
+

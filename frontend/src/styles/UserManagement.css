@@ -1,0 +1,299 @@
+/* User Management Styles */
+.user-management-container {
+  padding: 20px;
+  background-color: var(--color-12);
+  min-height: 100vh;
+}
+
+.user-role-admin {
+  background-color: rgba(40, 80, 140, 0.15);
+  color: var(--color-9);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(40, 80, 140, 0.3);
+}
+
+.user-role-technician {
+  background-color: rgba(240, 140, 40, 0.15);
+  color: var(--color-5);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(240, 140, 40, 0.3);
+}
+
+.user-role-reception {
+  background-color: rgba(240, 120, 80, 0.15);
+  color: var(--color-4);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(240, 120, 80, 0.3);
+}
+
+.user-role-superadmin {
+  background-color: rgba(60, 60, 60, 0.15);
+  color: var(--color-2);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(60, 60, 60, 0.3);
+}
+
+.user-create-form {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.user-create-form h5 {
+  color: var(--color-9);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.user-create-form .form-label {
+  color: var(--color-2);
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.user-create-form .form-control,
+.user-create-form .form-select {
+  border: 1px solid var(--color-11);
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: var(--color-13);
+  color: var(--color-2);
+  transition: all 0.3s ease;
+}
+
+.user-create-form .form-control:focus,
+.user-create-form .form-select:focus {
+  border-color: var(--color-9);
+  box-shadow: 0 0 0 3px rgba(40, 80, 140, 0.1);
+  outline: none;
+}
+
+.user-form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.user-form-buttons .btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.user-form-buttons .btn-primary {
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+  color: white;
+}
+
+.user-form-buttons .btn-primary:hover {
+  background-color: var(--color-10);
+  border-color: var(--color-10);
+}
+
+.user-form-buttons .btn-secondary {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  color: white;
+}
+
+.user-form-buttons .btn-secondary:hover {
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+}
+
+.user-filters-card {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  margin-bottom: 20px;
+}
+
+.user-filters-card .card-body {
+  padding: 20px;
+}
+
+.user-filters-card h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .user-management-container {
+    padding: 15px;
+  }
+
+  .user-create-form {
+    padding: 15px;
+  }
+
+  .user-create-form h5 {
+    font-size: 1rem;
+  }
+
+  .user-form-buttons {
+    gap: 8px;
+  }
+
+  .user-form-buttons .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-management-container {
+    padding: 10px;
+  }
+
+  .user-role-admin,
+  .user-role-technician,
+  .user-role-reception,
+  .user-role-superadmin {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .user-create-form {
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  .user-create-form h5 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .user-create-form .form-label {
+    font-size: 0.85rem;
+  }
+
+  .user-create-form .form-control,
+  .user-create-form .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .user-form-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .user-form-buttons .btn {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .user-filters-card {
+    margin-bottom: 15px;
+  }
+
+  .user-filters-card .card-body {
+    padding: 12px;
+  }
+
+  .user-filters-card h6 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .user-filters-card .form-label {
+    font-size: 0.75rem;
+  }
+
+  .user-filters-card .form-control,
+  .user-filters-card .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-management-container {
+    padding: 8px;
+  }
+
+  .user-role-admin,
+  .user-role-technician,
+  .user-role-reception,
+  .user-role-superadmin {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+  }
+
+  .user-create-form {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .user-create-form h5 {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .user-create-form .form-label {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+
+  .user-create-form .form-control,
+  .user-create-form .form-select {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+
+  .user-form-buttons {
+    gap: 6px;
+  }
+
+  .user-form-buttons .btn {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  .user-filters-card .card-body {
+    padding: 10px;
+  }
+
+  .user-filters-card h6 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .user-filters-card .form-label {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  .user-filters-card .form-control,
+  .user-filters-card .form-select {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+}

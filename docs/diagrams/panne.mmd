@@ -1,0 +1,15 @@
+stateDiagram-v2
+    [*] --> Reported
+    Reported --> Triaged : triage
+    Triaged --> Assigned : assignation
+    Assigned --> InProgress : prise_en_charge
+    InProgress --> Resolved : resolution
+    Resolved --> Verified : verification
+    Verified --> Closed : clôture
+    Resolved --> Reopened : réouverture
+    Reopened --> InProgress
+    Closed --> [*]
+
+    %% transitions importantes
+    Reported : Signalée par utilisateur
+    Triaged : Priorité/gravité évaluée

@@ -1,0 +1,5 @@
+//seeding command
+docker compose exec backend node seedMachines.js
+
+//show data of mysql
+docker exec -it medical-machine-mysql-dev mysql -u root -pmysql_password_123 medical_machine_app

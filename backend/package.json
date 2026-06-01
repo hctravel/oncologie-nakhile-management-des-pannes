@@ -1,0 +1,52 @@
+{
+  "name": "medical-machine-app-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Medical Machine Management System",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "node src/migrate.js",
+    "db-init": "node src/db-init.js",
+    "seed": "node src/migrate.js",
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "keywords": [
+    "medical",
+    "machine",
+    "management",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^7.0.0",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.18.0",
+    "sequelize": "^6.37.7",
+    "socket.io": "^4.6.1",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

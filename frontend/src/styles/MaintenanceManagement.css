@@ -1,0 +1,356 @@
+/* Maintenance Management Styles */
+.maintenance-management-container {
+  padding: 20px;
+  background-color: var(--color-12);
+}
+
+.maintenance-type-preventive {
+  background-color: rgba(40, 80, 140, 0.15);
+  color: var(--color-9);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.maintenance-type-corrective {
+  background-color: rgba(240, 140, 40, 0.15);
+  color: var(--color-5);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.maintenance-calendar {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.maintenance-calendar h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--color-13);
+  border-radius: 6px;
+  border: 1px solid var(--color-11);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--color-2);
+  font-size: 0.9rem;
+}
+
+.calendar-day:hover {
+  background-color: rgba(40, 80, 140, 0.1);
+  border-color: var(--color-9);
+  transform: translateY(-2px);
+}
+
+.calendar-day.completed {
+  background-color: rgba(240, 140, 40, 0.15);
+  border-color: var(--color-5);
+  color: var(--color-5);
+  font-weight: 500;
+}
+
+.maintenance-filters-card {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  margin-bottom: 20px;
+}
+
+.maintenance-filters-card .card-body {
+  padding: 20px;
+}
+
+.maintenance-filters-card h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.maintenance-filters-card .form-label {
+  color: var(--color-3);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.maintenance-filters-card .form-control,
+.maintenance-filters-card .form-select {
+  border: 1px solid var(--color-11);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: var(--color-13);
+  color: var(--color-2);
+  transition: all 0.3s ease;
+}
+
+.maintenance-filters-card .form-control:focus,
+.maintenance-filters-card .form-select:focus {
+  border-color: var(--color-9);
+  box-shadow: 0 0 0 3px rgba(40, 80, 140, 0.1);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .maintenance-management-container {
+    padding: 15px;
+  }
+
+  .maintenance-calendar {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .calendar-day {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .maintenance-filters-card .card-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maintenance-management-container {
+    padding: 10px;
+  }
+
+  .maintenance-type-preventive,
+  .maintenance-type-corrective {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .maintenance-calendar {
+    margin-top: 15px;
+    padding: 12px;
+  }
+
+  .maintenance-calendar h6 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .calendar-grid {
+    gap: 8px;
+  }
+
+  .calendar-day {
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+
+  .maintenance-filters-card {
+    margin-bottom: 15px;
+  }
+
+  .maintenance-filters-card .card-body {
+    padding: 12px;
+  }
+
+  .maintenance-filters-card h6 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .maintenance-filters-card .form-label {
+    font-size: 0.75rem;
+  }
+
+  .maintenance-filters-card .form-control,
+  .maintenance-filters-card .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .maintenance-management-container {
+    padding: 8px;
+  }
+
+  .maintenance-type-preventive,
+  .maintenance-type-corrective {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+  }
+
+  .maintenance-calendar {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .maintenance-calendar h6 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .calendar-grid {
+    gap: 6px;
+  }
+
+  .calendar-day {
+    padding: 4px 2px;
+    font-size: 0.6rem;
+  }
+
+  .maintenance-filters-card .card-body {
+    padding: 10px;
+  }
+
+  .maintenance-filters-card h6 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .maintenance-filters-card .form-label {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  .maintenance-filters-card .form-control,
+  .maintenance-filters-card .form-select {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+}
+
+/* React Calendar Styles */
+.calendar-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar-wrapper .react-calendar {
+  width: 100%;
+  max-width: none;
+  border: 1px solid var(--color-11);
+  border-radius: 6px;
+  background-color: var(--color-13);
+  font-family: inherit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-wrapper .react-calendar__navigation {
+  background-color: var(--color-12);
+  border-bottom: 1px solid var(--color-11);
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+}
+
+.calendar-wrapper .react-calendar__navigation button {
+  color: var(--color-2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.calendar-wrapper .react-calendar__navigation button:hover {
+  background-color: rgba(40, 80, 140, 0.1);
+  color: var(--color-9);
+}
+
+.calendar-wrapper .react-calendar__navigation button:disabled {
+  color: var(--color-3);
+  cursor: not-allowed;
+}
+
+.calendar-wrapper .react-calendar__month-view {
+  padding: 10px;
+}
+
+.calendar-wrapper .react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-3);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-11);
+}
+
+.calendar-wrapper .react-calendar__month-view__weekdays__weekday {
+  padding: 5px 0;
+}
+
+.calendar-wrapper .react-calendar__month-view__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-wrapper .react-calendar__tile {
+  padding: 10px 5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--color-2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.calendar-wrapper .react-calendar__tile:hover {
+  background-color: rgba(40, 80, 140, 0.1);
+  border-color: var(--color-9);
+}
+
+.calendar-wrapper .react-calendar__tile--active {
+  background-color: var(--color-9);
+  color: white;
+  border-color: var(--color-9);
+  font-weight: 600;
+}
+
+.calendar-wrapper .react-calendar__tile--active:hover {
+  background-color: rgba(40, 80, 140, 0.9);
+}
+
+.calendar-wrapper .react-calendar__tile--now {
+  background-color: rgba(40, 80, 140, 0.1);
+  border-color: var(--color-9);
+}
+
+.calendar-wrapper .react-calendar__tile--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--color-12);
+  color: var(--color-3);
+}
+
+.calendar-wrapper .react-calendar__tile--disabled:hover {
+  background-color: var(--color-12);
+  border-color: transparent;
+}

@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> Planned
+    Planned --> Scheduled : programmer_date
+    Scheduled --> InProgress : début_intervention
+    InProgress --> Completed : intervention_terminee
+    InProgress --> Cancelled : annulée
+    Completed --> Verified : vérification_post_intervention
+    Verified --> Closed : clôture
+    Cancelled --> Planned : replanifier
+    Closed --> [*]
+
+    Planned : Proposition / checklist prête
+    Scheduled : Date confirmée

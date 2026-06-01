@@ -1,0 +1,180 @@
+/* Machine Usage Styles */
+.total-amount-card {
+  background: linear-gradient(135deg, var(--color-10) 0%, var(--color-9) 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(20, 40, 80, 0.2);
+}
+
+.total-amount-card .card-body {
+  padding: 25px;
+}
+
+.total-amount-card h5 {
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  opacity: 0.95;
+  font-size: 0.95rem;
+}
+
+.total-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.machine-usage-filters {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  margin-bottom: 20px;
+}
+
+.machine-usage-filters .card-body {
+  padding: 20px;
+}
+
+.machine-usage-filters h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.machine-usage-filters .form-label {
+  color: var(--color-3);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.machine-usage-filters .form-control,
+.machine-usage-filters .form-select {
+  border: 1px solid var(--color-11);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: var(--color-13);
+  color: var(--color-2);
+  transition: all 0.3s ease;
+}
+
+.machine-usage-filters .form-control:focus,
+.machine-usage-filters .form-select:focus {
+  border-color: var(--color-5);
+  box-shadow: 0 0 0 3px rgba(240, 140, 40, 0.1);
+  outline: none;
+}
+
+.usage-container {
+  background-color: var(--color-12);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .usage-container {
+    padding: 15px;
+  }
+
+  .total-amount-card .card-body {
+    padding: 20px;
+  }
+
+  .total-amount {
+    font-size: 2rem;
+  }
+
+  .machine-usage-filters .card-body {
+    padding: 15px;
+  }
+
+  .machine-usage-filters h6 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-container {
+    padding: 10px;
+  }
+
+  .total-amount {
+    font-size: 1.8rem;
+  }
+
+  .total-amount-card .card-body {
+    padding: 15px;
+  }
+
+  .total-amount-card h5 {
+    font-size: 0.85rem;
+  }
+
+  .machine-usage-filters {
+    margin-bottom: 15px;
+  }
+
+  .machine-usage-filters .card-body {
+    padding: 12px;
+  }
+
+  .machine-usage-filters h6 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .machine-usage-filters .form-label {
+    font-size: 0.75rem;
+  }
+
+  .machine-usage-filters .form-control,
+  .machine-usage-filters .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .usage-container {
+    padding: 8px;
+  }
+
+  .total-amount {
+    font-size: 1.3rem;
+  }
+
+  .total-amount-card .card-body {
+    padding: 12px;
+  }
+
+  .total-amount-card h5 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .machine-usage-filters .card-body {
+    padding: 10px;
+  }
+
+  .machine-usage-filters h6 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+
+  .machine-usage-filters .form-label {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  .machine-usage-filters .form-control,
+  .machine-usage-filters .form-select {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+}

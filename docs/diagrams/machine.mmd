@@ -1,0 +1,19 @@
+stateDiagram-v2
+    [*] --> Active
+    Active --> ScheduledMaintenance : planifier_maintenance
+    ScheduledMaintenance --> InMaintenance : commencer_maintenance
+    InMaintenance --> Active : maintenance_terminee
+    Active --> ReportedFault : signaler_panne
+    ReportedFault --> AssignedToTechnician : assigner_technicien
+    AssignedToTechnician --> InRepair : commencer_reparation
+    InRepair --> Active : reparations_terminees
+    InRepair --> OutOfService : declaration_hors_service
+    OutOfService --> Decommissioned : mettre_hors_service_definitif
+    Active --> Decommissioned : mise_au_rebut
+    Decommissioned --> [*]
+
+    %% états optionnels
+    ScheduledMaintenance : (Préventive planifiée)
+    ReportedFault : (Panne signalée)
+    AssignedToTechnician : (Assignée)
+    InRepair : (En réparation)

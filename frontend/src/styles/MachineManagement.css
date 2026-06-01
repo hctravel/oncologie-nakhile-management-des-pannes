@@ -1,0 +1,525 @@
+/* Management Page Styles */
+.management-container {
+  padding: 20px;
+  background-color: var(--color-12);
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.management-header h2 {
+  color: var(--color-2);
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.management-header .btn {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.management-header .btn-primary {
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+  color: white;
+}
+
+.management-header .btn-primary:hover {
+  background-color: var(--color-10);
+  border-color: var(--color-10);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(20, 40, 80, 0.3);
+}
+
+/* Data Table Styles */
+.data-table-container {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid var(--color-11);
+}
+
+.table-filters {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-bottom: 1px solid var(--color-11);
+}
+
+.table-filters h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.table-filters .form-label {
+  color: var(--color-3);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.table-filters .form-control,
+.table-filters .form-select {
+  border: 1px solid var(--color-11);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: var(--color-13);
+  color: var(--color-2);
+  transition: all 0.3s ease;
+}
+
+.table-filters .form-control:focus,
+.table-filters .form-select:focus {
+  border-color: var(--color-9);
+  box-shadow: 0 0 0 3px rgba(40, 80, 140, 0.1);
+  outline: none;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper .table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--color-9);
+  color: white;
+}
+
+.table thead th {
+  padding: 15px;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(240, 240, 240, 0.7);
+}
+
+.table tbody td {
+  padding: 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--color-11);
+  font-size: 0.9rem;
+  color: var(--color-2);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-footer {
+  padding: 15px 20px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-top: 1px solid var(--color-11);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pagination-controls .btn {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+  color: white;
+}
+
+.pagination-controls .btn:hover {
+  background-color: var(--color-10);
+}
+
+/* Modal Styles */
+.modal-header {
+  background-color: var(--color-13);
+  border-bottom: 1px solid var(--color-11);
+  padding: 1.5rem;
+}
+
+.modal-title {
+  color: var(--color-9);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  background-color: var(--color-13);
+}
+
+.modal-body .form-label {
+  color: var(--color-2);
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+  border: 1px solid var(--color-11);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background-color: var(--color-13);
+  color: var(--color-2);
+  transition: all 0.3s ease;
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+  border-color: var(--color-9);
+  box-shadow: 0 0 0 3px rgba(40, 80, 140, 0.1);
+  outline: none;
+}
+
+.modal-footer {
+  background-color: var(--color-13);
+  border-top: 1px solid var(--color-11);
+  padding: 1.5rem;
+}
+
+.modal-footer .btn-primary {
+  background-color: var(--color-9);
+  border-color: var(--color-9);
+  color: white;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: var(--color-10);
+  border-color: var(--color-10);
+}
+
+.modal-footer .btn-secondary {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+}
+
+/* Filters Card */
+.filters-card {
+  background: var(--color-13);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-11);
+  margin-bottom: 20px;
+}
+
+.filters-card .card-body {
+  padding: 20px;
+}
+
+.filters-card h6 {
+  color: var(--color-2);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Export Button */
+.export-btn {
+  background-color: var(--color-5);
+  border-color: var(--color-5);
+  color: white;
+  font-weight: 500;
+}
+
+.export-btn:hover {
+  background-color: #d47820;
+  border-color: #d47820;
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  .management-header h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .management-container {
+    padding: 15px;
+  }
+
+  .management-header {
+    margin-bottom: 20px;
+  }
+
+  .management-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .management-header .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .table-filters {
+    padding: 15px;
+  }
+
+  .table-filters h6 {
+    font-size: 0.9rem;
+  }
+
+  .table thead th {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .table tbody td {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .management-container {
+    padding: 10px;
+  }
+
+  .management-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .management-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .management-header .btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .table-filters {
+    padding: 12px;
+  }
+
+  .table-filters h6 {
+    font-size: 0.85rem;
+  }
+
+  .table-filters .form-label {
+    font-size: 0.75rem;
+  }
+
+  .table-filters .form-control,
+  .table-filters .form-select {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .table-wrapper {
+    font-size: 0.85rem;
+  }
+
+  .table thead th {
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+
+  .table tbody td {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 15px;
+    font-size: 0.85rem;
+  }
+
+  .pagination-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pagination-controls .btn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .modal {
+    --bs-modal-margin: 10px;
+  }
+
+  .modal-header {
+    padding: 1rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-footer {
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-body .form-label {
+    font-size: 0.85rem;
+  }
+
+  .modal-body .form-control,
+  .modal-body .form-select {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .modal-footer .btn {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .filters-card {
+    margin-bottom: 15px;
+  }
+
+  .filters-card h6 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-container {
+    padding: 8px;
+  }
+
+  .management-header h2 {
+    font-size: 1rem;
+  }
+
+  .management-header .btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .table-filters {
+    padding: 10px;
+  }
+
+  .table-filters h6 {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+
+  .table-filters .form-label {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  .table-filters .form-control,
+  .table-filters .form-select {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+
+  .table-wrapper {
+    font-size: 0.7rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table thead th {
+    padding: 8px;
+    font-size: 0.65rem;
+  }
+
+  .table tbody td {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 12px;
+    font-size: 0.75rem;
+  }
+
+  .pagination-controls .btn {
+    padding: 4px 8px;
+    font-size: 0.65rem;
+  }
+
+  .modal-header {
+    padding: 0.75rem;
+  }
+
+  .modal-body {
+    padding: 0.75rem;
+  }
+
+  .modal-footer {
+    padding: 0.75rem;
+    gap: 8px;
+  }
+
+  .modal-title {
+    font-size: 0.95rem;
+  }
+
+  .modal-body .form-label {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+
+  .modal-body .form-control,
+  .modal-body .form-select {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .modal-footer .btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .filters-card h6 {
+    font-size: 0.75rem;
+  }
+
+  .filters-card .form-label {
+    font-size: 0.7rem;
+  }
+
+  .filters-card .form-control,
+  .filters-card .form-select {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+}
