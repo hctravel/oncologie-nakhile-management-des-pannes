@@ -1,6 +1,6 @@
 /* Sidebar Styles */
 .sidebar {
-  width: 260px;
+  width: 290px;
   background: linear-gradient(135deg, var(--color-10) 0%, var(--color-9) 100%);
   color: var(--color-13);
   padding: 0;
@@ -23,6 +23,7 @@
 
 .sidebar-header img {
   margin-bottom: 10px;
+  margin-left: -10px;
   filter: brightness(0) invert(1);
   max-height: 50px;
   width: auto;
